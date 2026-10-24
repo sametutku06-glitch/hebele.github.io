@@ -1,0 +1,7 @@
+{
+  "name": "sinav-cam-portali",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": { "dev": "wrangler d1 execute EXAMS_DB --local --file=./schema.sql && wrangler dev", "deploy": "wrangler deploy", "db:init": "wrangler d1 execute EXAMS_DB --remote --file=./schema.sql", "typecheck": "tsc --noEmit --target ES2022 --moduleResolution Bundler --module ESNext --lib ES2022,WebWorker src/worker.ts" },
+  "devDependencies": { "@cloudflare/workers-types": "^4.20261018.0", "typescript": "^5.7.3", "wrangler": "^4.42.0" }
+}
